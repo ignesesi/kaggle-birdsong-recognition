@@ -27,8 +27,8 @@ def get_dict_value(input_dir):
     # dict_val = fill_range('s','y',input_dir/"birdsong-resampled-train-audio-04",dict_val)
     return dict_val
 
-BIRD_CODE = {
-    'aldfly': 0, 'ameavo': 1, 'amebit': 2,
+# BIRD_CODE = {
+#     'aldfly': 0, 'ameavo': 1, 'amebit': 2,
     # 'amecro': 3, 'amegfi': 4,
     # 'amekes': 5, 'amepip': 6, 'amered': 7, 'amerob': 8, 'amewig': 9,
     # 'amewoo': 10, 'amtspa': 11, 'annhum': 12, 'astfly': 13,
@@ -83,11 +83,11 @@ BIRD_CODE = {
     # 'wilsni1': 250, 'wiltur': 251, 'winwre3': 252, 'wlswar': 253, 'wooduc': 254,
     # 'wooscj2': 255, 'woothr': 256, 'y00475': 257, 'yebfly': 258, 'yebsap': 259,
     # 'yehbla': 260, 'yelwar': 261, 'yerwar': 262, 'yetvir': 263
-}
+# }
 
-EBIRD_LABEL = {'aldfly': 'Empidonax alnorum_Alder Flycatcher',
- 'ameavo': 'Recurvirostra americana_American Avocet',
- 'amebit': 'Botaurus lentiginosus_American Bittern',
+# EBIRD_LABEL = {'aldfly': 'Empidonax alnorum_Alder Flycatcher',
+#  'ameavo': 'Recurvirostra americana_American Avocet',
+#  'amebit': 'Botaurus lentiginosus_American Bittern',
  # 'amecro': 'Corvus brachyrhynchos_American Crow',
  # 'amegfi': 'Spinus tristis_American Goldfinch',
  # 'amekes': 'Falco sparverius_American Kestrel',
@@ -349,6 +349,19 @@ EBIRD_LABEL = {'aldfly': 'Empidonax alnorum_Alder Flycatcher',
  # 'yelwar': 'Setophaga petechia_Yellow Warbler',
  # 'yerwar': 'Setophaga coronata_Yellow-rumped Warbler',
  # 'yetvir': 'Vireo flavifrons_Yellow-throated Vireo'
+# }
+
+BIRD_CODE = {
+    'accordion': 0, 'tuba': 1, 'bassoon': 2, 'clarinet': 3, 
+    'contrabass': 4, 'flute': 5, 'horn': 6, 'oboe': 7, 'sax': 8,
+    'trombone': 9, 'trumpet': 10, 'viola': 11, 'violin': 12, 'cello': 13
+}
+
+EBIRD_LABEL = {
+    'accordion': 'Accordion', 'tuba': 'Tuba', 'bassoon': 'Bassoon',
+    'clarinet': 'Clarinet', 'contrabass': 'Contrabass', 'flute': 'Flute',
+    'horn': 'Horn', 'oboe': 'Oboe', 'sax': 'Sax', 'trombone': 'Trombone',
+    'trumpet': 'Trumpet', 'viola': 'Viola', 'violin': 'Violin', 'cello': 'Cello'
 }
 
 INV_EBIRD_LABEL = {v: k for k, v in EBIRD_LABEL.items()}
